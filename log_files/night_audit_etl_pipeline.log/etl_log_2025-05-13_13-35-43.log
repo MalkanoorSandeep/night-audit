@@ -1,0 +1,44 @@
+2025-05-13 13:35:43,274 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-13 13:35:43,292 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-13 13:35:43,297 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-13 13:35:43,308 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-13 13:35:43,308 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-13 13:35:43,308 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-13 13:35:43,313 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-13 13:35:43,319 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-13 13:35:44,302 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:44,311 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 09- Night Audit Packet.pdf
+2025-05-13 13:35:44,437 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:44,447 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 10- Night Audit Packet.pdf
+2025-05-13 13:35:44,629 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:44,642 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 13- Night Audit Packet.pdf
+2025-05-13 13:35:45,324 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:45,331 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 22- Night Audit Packet.pdf
+2025-05-13 13:35:45,562 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:45,572 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 04- Night Audit Packet.pdf
+2025-05-13 13:35:45,693 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:45,702 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 07- Night Audit Packet.pdf
+2025-05-13 13:35:46,121 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:46,132 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 14- Night Audit Packet.pdf
+2025-05-13 13:35:46,205 | ERROR | ❌ Failed to send email: (421, b'4.3.0 Temporary System Problem. Try again later (10). For more information,\n4.3.0 go to\n4.3.0  https://support.google.com/a/answer/3221692 00721157ae682-70a3d9cb611sm25390877b3.82 - gsmtp')
+2025-05-13 13:35:46,211 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 15- Night Audit Packet.pdf
+2025-05-13 13:35:46,368 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:46,373 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 03 - 02 - Night Audit Packet.pdf
+2025-05-13 13:35:46,723 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:46,742 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 03 - 04 - Night Audit Packet.pdf
+2025-05-13 13:35:46,950 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:46,961 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 03 - 12 - Night Audit Packet.pdf
+2025-05-13 13:35:47,134 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:47,144 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 03 - 13 - Night Audit Packet.pdf
+2025-05-13 13:35:47,624 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:47,652 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 03 - 14 - Night Audit Packet.pdf
+2025-05-13 13:35:47,959 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:47,983 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 04 - 02- Night Audit Packet.pdf
+2025-05-13 13:35:48,357 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:48,553 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:49,075 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:49,269 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:49,517 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:49,751 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:50,425 | INFO | 📧 Email sent successfully.
+2025-05-13 13:35:50,532 | INFO | 📧 Email sent successfully.

@@ -1,0 +1,82 @@
+2025-05-12 16:46:47,272 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-12 16:46:47,272 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-12 16:46:47,272 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-12 16:46:47,272 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-12 16:46:47,272 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-12 16:46:47,280 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-12 16:46:47,337 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-12 16:46:47,341 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-12 16:46:48,227 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:48,233 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 09- Night Audit Packet.pdf
+2025-05-12 16:46:48,431 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:48,437 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 10- Night Audit Packet.pdf
+2025-05-12 16:46:48,575 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:48,580 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 13- Night Audit Packet.pdf
+2025-05-12 16:46:49,459 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:49,466 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 22- Night Audit Packet.pdf
+2025-05-12 16:46:49,598 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:49,606 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 04- Night Audit Packet.pdf
+2025-05-12 16:46:49,758 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:49,763 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 07- Night Audit Packet.pdf
+2025-05-12 16:46:50,544 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:50,552 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 14- Night Audit Packet.pdf
+2025-05-12 16:46:50,894 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:50,901 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 15- Night Audit Packet.pdf
+2025-05-12 16:46:51,257 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:51,262 | INFO | 📄 Starting processing file: 2025 - 03 - 02 - Night Audit Packet.pdf
+2025-05-12 16:46:51,511 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:51,512 | INFO | 📄 Starting processing file: 2025 - 03 - 04 - Night Audit Packet.pdf
+2025-05-12 16:46:51,679 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:51,681 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 04 - 02- Night Audit Packet.pdf
+2025-05-12 16:46:52,123 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:52,125 | INFO | 📄 Starting processing file: Online Schedule Change Form.pdf
+2025-05-12 16:46:52,353 | INFO | 📧 Email sent successfully.
+2025-05-12 16:46:52,366 | WARNING | ⚠️ No A/R Aging data in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,366 | WARNING | ⚠️ No Transaction Closeout data in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,367 | WARNING | ⚠️ No In-House List data in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,367 | WARNING | ⚠️ Section room_statistics not found in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,367 | WARNING | ⚠️ Section performance_statistics not found in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,367 | WARNING | ⚠️ Section guest_statistics not found in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,369 | ERROR | ❌ Ledger Activity extraction failed: Ledger Activity Report section not found
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 78, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 215, in extract_ledger_activity_report_with_metadata
+    raise Exception("Ledger Activity Report section not found")
+Exception: Ledger Activity Report section not found
+
+2025-05-12 16:46:52,391 | WARNING | ⚠️ Ledger Summary section not found.
+2025-05-12 16:46:52,392 | WARNING | ⚠️ No Ledger Summary data in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,392 | WARNING | ⚠️ No Show Report section not found in file:
+2025-05-12 16:46:52,392 | WARNING | ⚠️ No No Show Report data in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,392 | WARNING | ⚠️ No Rate Discrepancy data in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,393 | WARNING | ⚠️ No Hotel Journal Summary data in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,398 | ERROR | ❌ Hotel Journal Detail extraction failed: 'date'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 78, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 233, in <lambda>
+    lambda pages: extract_hotel_journal_details(pages).assign(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 5012, in assign
+    data[k] = com.apply_if_callable(v, data)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/common.py", line 379, in apply_if_callable
+    return maybe_callable(obj, **kwargs)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 234, in <lambda>
+    date=lambda df: df["date"].apply(convert_date),
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/range.py", line 418, in get_loc
+    raise KeyError(key)
+KeyError: 'date'
+
+2025-05-12 16:46:52,398 | WARNING | ⚠️ No Reservation Activity data for reservation_activity in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,399 | WARNING | ⚠️ No Shift Reconciliation data for shift_reconciliation in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,399 | WARNING | ⚠️ No Shift Reconciliation data for shift_summary in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,400 | WARNING | ⚠️ No Tax Exempt data for exempt_revenue_tax in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,400 | WARNING | ⚠️ No Tax Exempt data for exempt_tax in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,400 | WARNING | ⚠️ No Tax Exempt data for tax_exempt_revenue_summary in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,400 | WARNING | ⚠️ No Tax Exempt data for tax_refund_revenue_summary in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,400 | WARNING | ⚠️ No Gross Room Revenue data for gross_room_revenue_detail in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,401 | WARNING | ⚠️ No Revenue by Rate Code section found in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,401 | WARNING | ⚠️ No Revenue by Rate Code data for revenue_by_rate_code in Online Schedule Change Form.pdf
+2025-05-12 16:46:52,401 | WARNING | ⚠️ No Advance Deposit Journal data for advance_deposit_journal in Online Schedule Change Form.pdf

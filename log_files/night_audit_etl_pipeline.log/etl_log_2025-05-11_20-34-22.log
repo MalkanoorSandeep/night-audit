@@ -1,0 +1,425 @@
+2025-05-11 20:34:22,795 | INFO | 📄 Starting processing file: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-11 20:34:22,795 | INFO | 📄 Starting processing file: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-11 20:34:22,795 | INFO | 📄 Starting processing file: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-11 20:34:22,795 | INFO | 📄 Starting processing file: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-11 20:34:22,795 | INFO | 📄 Starting processing file: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-11 20:34:22,797 | INFO | 📄 Starting processing file: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-11 20:34:22,796 | INFO | 📄 Starting processing file: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-11 20:34:22,795 | INFO | 📄 Starting processing file: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-11 20:34:36,127 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:36,148 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:36,154 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:36,175 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:36,197 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:36,215 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:36,219 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:36,235 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:36,241 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:36,247 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:36,257 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:36,260 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:36,271 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:36,274 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:36,923 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:36,956 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:36,992 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:37,007 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:37,013 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:37,021 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:37,031 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:37,035 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:37,037 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:37,049 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:37,049 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:37,060 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:37,076 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:37,081 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:37,103 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:37,105 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:37,114 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:37,119 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:37,130 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:37,130 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:37,147 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:37,147 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:37,164 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:37,197 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:37,214 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:37,231 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:37,251 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:37,267 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:37,380 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:37,405 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:37,439 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:37,453 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:37,465 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:37,476 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:37,488 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:37,954 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:37,979 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:38,010 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:38,026 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:38,042 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:38,056 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:38,070 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:34:41,086 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:41,088 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-11 20:34:41,103 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:41,145 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:41,175 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:41,192 | INFO | ✅ Processed Reservation Activity → reservation_activity (7 rows)
+2025-05-11 20:34:41,204 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:34:41,218 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:34:41,241 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (2 rows)
+2025-05-11 20:34:41,241 | WARNING | ⚠️ No Tax Exempt data for exempt_tax in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-11 20:34:41,241 | WARNING | ⚠️ No Tax Exempt data for tax_exempt_revenue_summary in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-11 20:34:41,252 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:41,300 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:41,328 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (9 rows)
+2025-05-11 20:34:41,341 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (1 rows)
+2025-05-11 20:34:41,343 | INFO | ✅ Completed 2025 - 01 - 01- Night Audit Packet.pdf | Rows loaded: 230 | Failed: None
+2025-05-11 20:34:41,564 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:41,566 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-11 20:34:41,579 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:41,601 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:41,636 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:41,648 | INFO | ✅ Processed Reservation Activity → reservation_activity (8 rows)
+2025-05-11 20:34:41,660 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:34:41,669 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:34:41,695 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:34:41,706 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:34:41,716 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:34:41,730 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:41,746 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:41,770 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (11 rows)
+2025-05-11 20:34:41,798 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (2 rows)
+2025-05-11 20:34:41,800 | INFO | ✅ Completed 2025 - 01 - 02- Night Audit Packet.pdf | Rows loaded: 245 | Failed: None
+2025-05-11 20:34:42,325 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:42,437 | INFO | 📄 Starting processing file: 2025 - 01 - 09- Night Audit Packet.pdf
+2025-05-11 20:34:42,554 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:42,610 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:42,611 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-11 20:34:42,635 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:42,652 | INFO | 📄 Starting processing file: 2025 - 01 - 10- Night Audit Packet.pdf
+2025-05-11 20:34:42,684 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:42,732 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:42,761 | INFO | ✅ Processed Reservation Activity → reservation_activity (3 rows)
+2025-05-11 20:34:42,766 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:42,774 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-11 20:34:42,790 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:34:42,791 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:42,814 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:34:42,819 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:42,840 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:42,843 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-11 20:34:42,852 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:34:42,886 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:42,892 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:34:42,902 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:42,910 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:34:42,921 | INFO | ✅ Processed Reservation Activity → reservation_activity (11 rows)
+2025-05-11 20:34:42,924 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:42,928 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:42,930 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:34:42,939 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:34:42,953 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:42,984 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:42,989 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (15 rows)
+2025-05-11 20:34:42,990 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:34:42,993 | WARNING | ⚠️ No Advance Deposit Journal data for advance_deposit_journal in 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-11 20:34:42,997 | INFO | ✅ Completed 2025 - 01 - 06- Night Audit Packet.pdf | Rows loaded: 246 | Failed: None
+2025-05-11 20:34:43,013 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:34:43,021 | INFO | ✅ Processed Reservation Activity → reservation_activity (9 rows)
+2025-05-11 20:34:43,027 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:34:43,034 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (3 rows)
+2025-05-11 20:34:43,041 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:43,042 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:34:43,063 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:43,066 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:34:43,081 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:34:43,094 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:34:43,095 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:43,103 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (11 rows)
+2025-05-11 20:34:43,104 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:43,129 | INFO | ✅ Processed No Show Report
+2025-05-11 20:34:43,130 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (2 rows)
+2025-05-11 20:34:43,130 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:43,133 | INFO | ✅ Completed 2025 - 01 - 03- Night Audit Packet.pdf | Rows loaded: 252 | Failed: None
+2025-05-11 20:34:43,141 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:43,173 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (17 rows)
+2025-05-11 20:34:43,178 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:43,187 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (2 rows)
+2025-05-11 20:34:43,189 | INFO | ✅ Completed 2025 - 01 - 07- Night Audit Packet.pdf | Rows loaded: 254 | Failed: None
+2025-05-11 20:34:43,204 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:43,224 | INFO | ✅ Processed Reservation Activity → reservation_activity (8 rows)
+2025-05-11 20:34:43,249 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:34:43,258 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:34:43,285 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:34:43,298 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:34:43,311 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:34:43,315 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:43,316 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-11 20:34:43,318 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:43,332 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:43,352 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:43,370 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:43,373 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (12 rows)
+2025-05-11 20:34:43,385 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (2 rows)
+2025-05-11 20:34:43,387 | INFO | ✅ Completed 2025 - 01 - 04- Night Audit Packet.pdf | Rows loaded: 250 | Failed: None
+2025-05-11 20:34:43,389 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:43,410 | INFO | ✅ Processed Reservation Activity → reservation_activity (3 rows)
+2025-05-11 20:34:43,432 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:34:43,439 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:34:43,454 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:34:43,459 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:34:43,464 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:34:43,469 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:43,482 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:43,510 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (13 rows)
+2025-05-11 20:34:43,512 | WARNING | ⚠️ No Advance Deposit Journal data for advance_deposit_journal in 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-11 20:34:43,517 | INFO | ✅ Completed 2025 - 01 - 05- Night Audit Packet.pdf | Rows loaded: 253 | Failed: None
+2025-05-11 20:34:43,802 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:34:43,812 | INFO | ✅ Processed No Show Report
+2025-05-11 20:34:43,819 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:34:43,835 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:34:43,860 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:34:43,892 | INFO | ✅ Processed Reservation Activity → reservation_activity (15 rows)
+2025-05-11 20:34:43,905 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:34:43,915 | INFO | ✅ Processed Shift Reconciliation → shift_summary (4 rows)
+2025-05-11 20:34:43,930 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:34:43,936 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:34:43,942 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:34:43,948 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:34:43,966 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:34:43,980 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:43,982 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (19 rows)
+2025-05-11 20:34:43,993 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (1 rows)
+2025-05-11 20:34:43,996 | INFO | ✅ Completed 2025 - 01 - 08- Night Audit Packet.pdf | Rows loaded: 259 | Failed: None
+2025-05-11 20:34:44,025 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:44,071 | INFO | 📄 Starting processing file: 2025 - 01 - 13- Night Audit Packet.pdf
+2025-05-11 20:34:44,133 | INFO | 📄 Starting processing file: 2025 - 01 - 22- Night Audit Packet.pdf
+2025-05-11 20:34:44,198 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:44,306 | INFO | 📄 Starting processing file: 2025 - 02 - 04- Night Audit Packet.pdf
+2025-05-11 20:34:44,969 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:45,129 | INFO | 📄 Starting processing file: 2025 - 02 - 07- Night Audit Packet.pdf
+2025-05-11 20:34:45,144 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:45,245 | INFO | 📄 Starting processing file: 2025 - 02 - 14- Night Audit Packet.pdf
+2025-05-11 20:34:45,700 | INFO | 📧 Email sent successfully.
+2025-05-11 20:34:45,812 | INFO | 📄 Starting processing file: 2025 - 02 - 15- Night Audit Packet.pdf
+2025-05-11 20:34:59,219 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:34:59,247 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:34:59,278 | INFO | ✅ Processed In-House List
+2025-05-11 20:34:59,300 | INFO | ✅ Processed room_statistics
+2025-05-11 20:34:59,316 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:34:59,328 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:34:59,344 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:01,118 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:01,157 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:01,201 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:01,217 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:01,238 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:01,255 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:01,269 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:01,949 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:01,981 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:02,019 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:02,035 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:02,057 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:02,081 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:02,103 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:04,173 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:04,194 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:04,246 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:04,270 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:04,285 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:04,295 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:04,308 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:05,322 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:05,363 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:05,399 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:05,409 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:05,428 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:05,440 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:05,453 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:05,797 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:05,834 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:05,856 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:05,899 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:05,913 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:05,930 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:05,940 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:06,192 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:06,193 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 09- Night Audit Packet.pdf
+2025-05-11 20:35:06,210 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:06,237 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:06,282 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:06,315 | INFO | ✅ Processed Reservation Activity → reservation_activity (7 rows)
+2025-05-11 20:35:06,354 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:35:06,365 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:35:06,433 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:06,456 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:06,476 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:06,497 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:06,528 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:35:06,561 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (20 rows)
+2025-05-11 20:35:06,601 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (1 rows)
+2025-05-11 20:35:06,607 | INFO | ✅ Completed 2025 - 01 - 09- Night Audit Packet.pdf | Rows loaded: 256 | Failed: None
+2025-05-11 20:35:07,048 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:07,065 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:07,082 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:07,092 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:07,099 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:07,102 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:07,115 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:07,123 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:07,125 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:07,135 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:07,135 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:07,146 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:07,155 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:07,169 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:07,419 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:07,511 | INFO | 📄 Starting processing file: 2025 - 04 - 02- Night Audit Packet.pdf
+2025-05-11 20:35:08,837 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:08,839 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 10- Night Audit Packet.pdf
+2025-05-11 20:35:08,868 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:08,901 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:08,998 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:09,050 | INFO | ✅ Processed Reservation Activity → reservation_activity (10 rows)
+2025-05-11 20:35:09,081 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:09,086 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:35:09,099 | INFO | ✅ Processed No Show Report
+2025-05-11 20:35:09,099 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:35:09,121 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:09,125 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:09,145 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:09,149 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:09,157 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:09,170 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:09,173 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:09,185 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:35:09,200 | INFO | ✅ Processed Reservation Activity → reservation_activity (9 rows)
+2025-05-11 20:35:09,215 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:35:09,227 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (21 rows)
+2025-05-11 20:35:09,231 | WARNING | ⚠️ No Advance Deposit Journal data for advance_deposit_journal in 2025 - 01 - 10- Night Audit Packet.pdf
+2025-05-11 20:35:09,233 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:35:09,245 | INFO | ✅ Completed 2025 - 01 - 10- Night Audit Packet.pdf | Rows loaded: 276 | Failed: None
+2025-05-11 20:35:09,254 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:09,263 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:09,277 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:09,287 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:09,301 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:35:09,345 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (33 rows)
+2025-05-11 20:35:09,362 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (2 rows)
+2025-05-11 20:35:09,364 | INFO | ✅ Completed 2025 - 01 - 22- Night Audit Packet.pdf | Rows loaded: 243 | Failed: None
+2025-05-11 20:35:09,981 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:10,322 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:10,684 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:10,686 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 13- Night Audit Packet.pdf
+2025-05-11 20:35:10,703 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:10,721 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:10,753 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:10,780 | INFO | ✅ Processed Reservation Activity → reservation_activity (9 rows)
+2025-05-11 20:35:10,789 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:35:10,801 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:35:10,823 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:10,833 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:10,845 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:10,857 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:10,879 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-11 20:35:10,908 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (24 rows)
+2025-05-11 20:35:10,918 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (2 rows)
+2025-05-11 20:35:10,926 | INFO | ✅ Completed 2025 - 01 - 13- Night Audit Packet.pdf | Rows loaded: 275 | Failed: None
+2025-05-11 20:35:11,383 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:11,384 | WARNING | ⚠️ No No Show Report data in 2025 - 02 - 07- Night Audit Packet.pdf
+2025-05-11 20:35:11,396 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:11,406 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:11,431 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:11,446 | INFO | ✅ Processed Reservation Activity → reservation_activity (15 rows)
+2025-05-11 20:35:11,456 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:35:11,465 | INFO | ✅ Processed Shift Reconciliation → shift_summary (2 rows)
+2025-05-11 20:35:11,479 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:11,487 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:11,493 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:11,499 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:11,517 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (5 rows)
+2025-05-11 20:35:11,533 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:11,534 | WARNING | ⚠️ No No Show Report data in 2025 - 02 - 04- Night Audit Packet.pdf
+2025-05-11 20:35:11,538 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (40 rows)
+2025-05-11 20:35:11,543 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:11,545 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (2 rows)
+2025-05-11 20:35:11,547 | INFO | ✅ Completed 2025 - 02 - 07- Night Audit Packet.pdf | Rows loaded: 241 | Failed: None
+2025-05-11 20:35:11,560 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:11,584 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:11,595 | INFO | ✅ Processed Reservation Activity → reservation_activity (8 rows)
+2025-05-11 20:35:11,601 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:35:11,613 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:35:11,632 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (2 rows)
+2025-05-11 20:35:11,636 | INFO | ✅ Processed Tax Exempt → exempt_tax (1 rows)
+2025-05-11 20:35:11,640 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (1 rows)
+2025-05-11 20:35:11,645 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:11,648 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:11,656 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (5 rows)
+2025-05-11 20:35:11,692 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (40 rows)
+2025-05-11 20:35:11,706 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (1 rows)
+2025-05-11 20:35:11,708 | INFO | ✅ Completed 2025 - 02 - 04- Night Audit Packet.pdf | Rows loaded: 286 | Failed: None
+2025-05-11 20:35:12,217 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:12,219 | WARNING | ⚠️ No No Show Report data in 2025 - 02 - 14- Night Audit Packet.pdf
+2025-05-11 20:35:12,229 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:12,240 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:12,263 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:12,272 | INFO | ✅ Processed Reservation Activity → reservation_activity (8 rows)
+2025-05-11 20:35:12,278 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:35:12,287 | INFO | ✅ Processed Shift Reconciliation → shift_summary (2 rows)
+2025-05-11 20:35:12,292 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:12,299 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:12,303 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:12,307 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:12,311 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:12,321 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (5 rows)
+2025-05-11 20:35:12,338 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (44 rows)
+2025-05-11 20:35:12,344 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (1 rows)
+2025-05-11 20:35:12,345 | INFO | ✅ Completed 2025 - 02 - 14- Night Audit Packet.pdf | Rows loaded: 266 | Failed: None
+2025-05-11 20:35:12,424 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:12,425 | WARNING | ⚠️ No No Show Report data in 2025 - 02 - 15- Night Audit Packet.pdf
+2025-05-11 20:35:12,433 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:12,445 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:12,469 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:12,479 | INFO | ✅ Processed Reservation Activity → reservation_activity (9 rows)
+2025-05-11 20:35:12,485 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (2 rows)
+2025-05-11 20:35:12,491 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-11 20:35:12,504 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:12,508 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:12,513 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:12,518 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:12,528 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (5 rows)
+2025-05-11 20:35:12,546 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (46 rows)
+2025-05-11 20:35:12,547 | WARNING | ⚠️ No Advance Deposit Journal data for advance_deposit_journal in 2025 - 02 - 15- Night Audit Packet.pdf
+2025-05-11 20:35:12,548 | INFO | ✅ Completed 2025 - 02 - 15- Night Audit Packet.pdf | Rows loaded: 280 | Failed: None
+2025-05-11 20:35:12,730 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:13,191 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:13,976 | INFO | 📧 Email sent successfully.
+2025-05-11 20:35:19,172 | INFO | ✅ Processed A/R Aging
+2025-05-11 20:35:19,184 | INFO | ✅ Processed Transaction Closeout
+2025-05-11 20:35:19,197 | INFO | ✅ Processed In-House List
+2025-05-11 20:35:19,205 | INFO | ✅ Processed room_statistics
+2025-05-11 20:35:19,211 | INFO | ✅ Processed performance_statistics
+2025-05-11 20:35:19,217 | INFO | ✅ Processed guest_statistics
+2025-05-11 20:35:19,223 | INFO | ✅ Processed Ledger Activity
+2025-05-11 20:35:22,430 | INFO | ✅ Processed Ledger Summary
+2025-05-11 20:35:22,432 | WARNING | ⚠️ No No Show Report data in 2025 - 04 - 02- Night Audit Packet.pdf
+2025-05-11 20:35:22,452 | INFO | ✅ Processed Rate Discrepancy
+2025-05-11 20:35:22,465 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-11 20:35:22,484 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-11 20:35:22,500 | INFO | ✅ Processed Reservation Activity → reservation_activity (15 rows)
+2025-05-11 20:35:22,506 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-11 20:35:22,513 | INFO | ✅ Processed Shift Reconciliation → shift_summary (4 rows)
+2025-05-11 20:35:22,532 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (3 rows)
+2025-05-11 20:35:22,537 | INFO | ✅ Processed Tax Exempt → exempt_tax (2 rows)
+2025-05-11 20:35:22,542 | INFO | ✅ Processed Tax Exempt → tax_exempt_revenue_summary (2 rows)
+2025-05-11 20:35:22,547 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-11 20:35:22,557 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (5 rows)
+2025-05-11 20:35:22,579 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (56 rows)
+2025-05-11 20:35:22,580 | WARNING | ⚠️ No Advance Deposit Journal data for advance_deposit_journal in 2025 - 04 - 02- Night Audit Packet.pdf
+2025-05-11 20:35:22,583 | INFO | ✅ Completed 2025 - 04 - 02- Night Audit Packet.pdf | Rows loaded: 241 | Failed: None
+2025-05-11 20:35:23,804 | INFO | 📧 Email sent successfully.

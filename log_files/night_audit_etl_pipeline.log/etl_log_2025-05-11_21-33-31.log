@@ -1,0 +1,21 @@
+2025-05-11 21:33:31,952 | ERROR | ❌ Hotel Journal Summary extraction failed: 'adjustments'
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3790, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 152, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 181, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'adjustments'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 535, in extract_hotel_journal_summary
+    df[col] = df[col].replace(['', 'NA', 'nan'], None)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3797, in get_loc
+    raise KeyError(key) from err
+KeyError: 'adjustments'
+

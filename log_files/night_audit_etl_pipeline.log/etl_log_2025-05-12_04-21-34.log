@@ -1,0 +1,378 @@
+2025-05-12 04:21:35,578 | INFO | 📄 Starting processing file: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-12 04:24:31,521 | ERROR | ❌ A/R Aging extraction failed: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '169773-FL453-2025-01-02' for key 'ar_aging.PRIMARY'
+[SQL: INSERT INTO ar_aging (account, guest_name, current, days_30, days_60, days_90, days_120, credits, balance, limit_amount, property_code, user, report_date, source_file, load_timestamp) VALUES (%(account)s, %(guest_name)s, %(current)s, %(days_30)s, %(days_60)s, %(days_90)s, %(days_120)s, %(credits)s, %(balance)s, %(limit_amount)s, %(property_code)s, %(user)s, %(report_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'account': '169773', 'guest_name': 'CHOICE PRIVILEGES A/R ACCT# 106', 'current': 525.0, 'days_30': 325.0, 'days_60': 225.66, 'days_90': 0.0, 'days_120': 71698.11, 'credits': 0.0, 'balance': 72773.77, 'limit_amount': 5000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '447128', 'guest_name': 'CORPORATE LODGING CONSULTANTS', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 130722.73, 'credits': -6.26, 'balance': 130722.73, 'limit_amount': 10000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1262583', 'guest_name': 'NWFL SYMPHONY ORCHESTRA', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 75.47, 'credits': 0.0, 'balance': 75.47, 'limit_amount': 5000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1459824', 'guest_name': 'H20 PRUF, LLC', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 639.18, 'credits': 0.0, 'balance': 639.18, 'limit_amount': 1500.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1526533', 'guest_name': 'DELTA AIRLINES INC.', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 908.93, 'credits': 0.0, 'balance': 908.93, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1530547', 'guest_name': 'Unpaid Folios', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 9485.14, 'credits': 0.0, 'balance': 9485.14, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1557431', 'guest_name': 'HALPERNS SEAFOOD', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 201.4, 'credits': 0.0, 'balance': 201.4, 'limit_amount': 2000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1607500', 'guest_name': 'Thunderbird', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 301.0, 'credits': 0.0, 'balance': 301.0, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}  ... displaying 10 of 32 total bound parameter sets ...  {'account': '3448722', 'guest_name': 'Niceville Housing Authority', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 516.0, 'credits': 0.0, 'balance': 516.0, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '3601939', 'guest_name': 'Stuckman Tree Cutting Company', 'current': 0.0, 'days_30': 960.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 0.0, 'credits': 0.0, 'balance': 960.0, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '169773-FL453-2025-01-02' for key 'ar_aging.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 45, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 951, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1306, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '169773-FL453-2025-01-02' for key 'ar_aging.PRIMARY'
+[SQL: INSERT INTO ar_aging (account, guest_name, current, days_30, days_60, days_90, days_120, credits, balance, limit_amount, property_code, user, report_date, source_file, load_timestamp) VALUES (%(account)s, %(guest_name)s, %(current)s, %(days_30)s, %(days_60)s, %(days_90)s, %(days_120)s, %(credits)s, %(balance)s, %(limit_amount)s, %(property_code)s, %(user)s, %(report_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'account': '169773', 'guest_name': 'CHOICE PRIVILEGES A/R ACCT# 106', 'current': 525.0, 'days_30': 325.0, 'days_60': 225.66, 'days_90': 0.0, 'days_120': 71698.11, 'credits': 0.0, 'balance': 72773.77, 'limit_amount': 5000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '447128', 'guest_name': 'CORPORATE LODGING CONSULTANTS', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 130722.73, 'credits': -6.26, 'balance': 130722.73, 'limit_amount': 10000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1262583', 'guest_name': 'NWFL SYMPHONY ORCHESTRA', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 75.47, 'credits': 0.0, 'balance': 75.47, 'limit_amount': 5000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1459824', 'guest_name': 'H20 PRUF, LLC', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 639.18, 'credits': 0.0, 'balance': 639.18, 'limit_amount': 1500.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1526533', 'guest_name': 'DELTA AIRLINES INC.', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 908.93, 'credits': 0.0, 'balance': 908.93, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1530547', 'guest_name': 'Unpaid Folios', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 9485.14, 'credits': 0.0, 'balance': 9485.14, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1557431', 'guest_name': 'HALPERNS SEAFOOD', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 201.4, 'credits': 0.0, 'balance': 201.4, 'limit_amount': 2000.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '1607500', 'guest_name': 'Thunderbird', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 301.0, 'credits': 0.0, 'balance': 301.0, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}  ... displaying 10 of 32 total bound parameter sets ...  {'account': '3448722', 'guest_name': 'Niceville Housing Authority', 'current': 0.0, 'days_30': 0.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 516.0, 'credits': 0.0, 'balance': 516.0, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)}, {'account': '3601939', 'guest_name': 'Stuckman Tree Cutting Company', 'current': 0.0, 'days_30': 960.0, 'days_60': 0.0, 'days_90': 0.0, 'days_120': 0.0, 'credits': 0.0, 'balance': 960.0, 'limit_amount': 0.0, 'property_code': 'FL453', 'user': 'reaga.fl453', 'report_date': datetime.date(2025, 1, 2), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 24, 28, 923131)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+2025-05-12 04:25:05,986 | ERROR | ❌ Transaction Closeout extraction failed: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'Cash (CA)-FL453-2025-01-01' for key 'transaction_closeout.PRIMARY'
+[SQL: INSERT INTO transaction_closeout (description, opening_balance, todays_total, todays_adjustments, todays_net, ptd_totals, ytd_totals, property_code, user, business_date, source_file, load_timestamp) VALUES (%(description)s, %(opening_balance)s, %(todays_total)s, %(todays_adjustments)s, %(todays_net)s, %(ptd_totals)s, %(ytd_totals)s, %(property_code)s, %(user)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'description': 'Cash (CA)', 'opening_balance': 0.0, 'todays_total': -68.95, 'todays_adjustments': 0.0, 'todays_net': -68.95, 'ptd_totals': -68.95, 'ytd_totals': -68.95, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For CASH:', 'opening_balance': 0.0, 'todays_total': -68.95, 'todays_adjustments': 0.0, 'todays_net': -68.95, 'ptd_totals': -68.95, 'ytd_totals': -68.95, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Visa Payment (VI)', 'opening_balance': 0.0, 'todays_total': -142.49, 'todays_adjustments': 0.0, 'todays_net': -142.49, 'ptd_totals': -142.49, 'ytd_totals': -142.49, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For CREDIT CARDS:', 'opening_balance': 0.0, 'todays_total': -142.49, 'todays_adjustments': 0.0, 'todays_net': -142.49, 'ptd_totals': -142.49, 'ytd_totals': -142.49, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Room Charge (RM)', 'opening_balance': 0.0, 'todays_total': 1579.74, 'todays_adjustments': 0.0, 'todays_net': 1579.74, 'ptd_totals': 1579.74, 'ytd_totals': 1579.74, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For ROOM REVENUE:', 'opening_balance': 0.0, 'todays_total': 1579.74, 'todays_adjustments': 0.0, 'todays_net': 1579.74, 'ptd_totals': 1579.74, 'ytd_totals': 1579.74, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'State Tax (T1)', 'opening_balance': 0.0, 'todays_total': 104.84, 'todays_adjustments': 0.0, 'todays_net': 104.84, 'ptd_totals': 104.84, 'ytd_totals': 104.84, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Tourism Tax (T5)', 'opening_balance': 0.0, 'todays_total': 74.89, 'todays_adjustments': 0.0, 'todays_net': 74.89, 'ptd_totals': 74.89, 'ytd_totals': 74.89, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For TAX:', 'opening_balance': 0.0, 'todays_total': 179.73, 'todays_adjustments': 0.0, 'todays_net': 179.73, 'ptd_totals': 179.73, 'ytd_totals': 179.73, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry 'Cash (CA)-FL453-2025-01-01' for key 'transaction_closeout.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 45, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 951, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1306, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'Cash (CA)-FL453-2025-01-01' for key 'transaction_closeout.PRIMARY'
+[SQL: INSERT INTO transaction_closeout (description, opening_balance, todays_total, todays_adjustments, todays_net, ptd_totals, ytd_totals, property_code, user, business_date, source_file, load_timestamp) VALUES (%(description)s, %(opening_balance)s, %(todays_total)s, %(todays_adjustments)s, %(todays_net)s, %(ptd_totals)s, %(ytd_totals)s, %(property_code)s, %(user)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'description': 'Cash (CA)', 'opening_balance': 0.0, 'todays_total': -68.95, 'todays_adjustments': 0.0, 'todays_net': -68.95, 'ptd_totals': -68.95, 'ytd_totals': -68.95, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For CASH:', 'opening_balance': 0.0, 'todays_total': -68.95, 'todays_adjustments': 0.0, 'todays_net': -68.95, 'ptd_totals': -68.95, 'ytd_totals': -68.95, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Visa Payment (VI)', 'opening_balance': 0.0, 'todays_total': -142.49, 'todays_adjustments': 0.0, 'todays_net': -142.49, 'ptd_totals': -142.49, 'ytd_totals': -142.49, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For CREDIT CARDS:', 'opening_balance': 0.0, 'todays_total': -142.49, 'todays_adjustments': 0.0, 'todays_net': -142.49, 'ptd_totals': -142.49, 'ytd_totals': -142.49, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Room Charge (RM)', 'opening_balance': 0.0, 'todays_total': 1579.74, 'todays_adjustments': 0.0, 'todays_net': 1579.74, 'ptd_totals': 1579.74, 'ytd_totals': 1579.74, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For ROOM REVENUE:', 'opening_balance': 0.0, 'todays_total': 1579.74, 'todays_adjustments': 0.0, 'todays_net': 1579.74, 'ptd_totals': 1579.74, 'ytd_totals': 1579.74, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'State Tax (T1)', 'opening_balance': 0.0, 'todays_total': 104.84, 'todays_adjustments': 0.0, 'todays_net': 104.84, 'ptd_totals': 104.84, 'ytd_totals': 104.84, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Tourism Tax (T5)', 'opening_balance': 0.0, 'todays_total': 74.89, 'todays_adjustments': 0.0, 'todays_net': 74.89, 'ptd_totals': 74.89, 'ytd_totals': 74.89, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)}, {'description': 'Total For TAX:', 'opening_balance': 0.0, 'todays_total': 179.73, 'todays_adjustments': 0.0, 'todays_net': 179.73, 'ptd_totals': 179.73, 'ytd_totals': 179.73, 'property_code': 'FL453', 'user': 'reaga.fl453', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 4, 559677)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+2025-05-12 04:25:09,281 | INFO | ✅ Processed In-House List
+2025-05-12 04:25:23,152 | ERROR | ❌ room_statistics extraction failed: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Total Rooms' for key 'room_statistics.PRIMARY'
+[SQL: INSERT INTO room_statistics (metric, today, current_ptd, last_year_ptd, current_ytd, last_ytd, business_date, source_file, load_timestamp) VALUES (%(metric)s, %(today)s, %(current_ptd)s, %(last_year_ptd)s, %(current_ytd)s, %(last_ytd)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'metric': 'Total Rooms', 'today': '111', 'current_ptd': '111', 'last_year_ptd': '111', 'current_ytd': '111', 'last_ytd': '111', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Out Of Order', 'today': '40', 'current_ptd': '40', 'last_year_ptd': '63', 'current_ytd': '40', 'last_ytd': '63', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Rooms Available to Sell', 'today': '71', 'current_ptd': '71', 'last_year_ptd': '48', 'current_ytd': '71', 'last_ytd': '48', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Day Use Rooms', 'today': '0', 'current_ptd': '0', 'last_year_ptd': '0', 'current_ytd': '0', 'last_ytd': '0', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Stay Over Rooms', 'today': '26', 'current_ptd': '26', 'last_year_ptd': '29', 'current_ytd': '26', 'last_ytd': '29', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Total Revenue Rooms', 'today': '26', 'current_ptd': '26', 'last_year_ptd': '29', 'current_ytd': '26', 'last_ytd': '29', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Comp Rooms', 'today': '5', 'current_ptd': '5', 'last_year_ptd': '0', 'current_ytd': '5', 'last_ytd': '0', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Total Non-Revenue Rooms', 'today': '5', 'current_ptd': '5', 'last_year_ptd': '0', 'current_ytd': '5', 'last_ytd': '0', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Total Occupied Rooms', 'today': '31', 'current_ptd': '31', 'last_year_ptd': '29', 'current_ytd': '31', 'last_ytd': '29', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Total Rooms' for key 'room_statistics.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 45, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 951, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1306, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Total Rooms' for key 'room_statistics.PRIMARY'
+[SQL: INSERT INTO room_statistics (metric, today, current_ptd, last_year_ptd, current_ytd, last_ytd, business_date, source_file, load_timestamp) VALUES (%(metric)s, %(today)s, %(current_ptd)s, %(last_year_ptd)s, %(current_ytd)s, %(last_ytd)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'metric': 'Total Rooms', 'today': '111', 'current_ptd': '111', 'last_year_ptd': '111', 'current_ytd': '111', 'last_ytd': '111', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Out Of Order', 'today': '40', 'current_ptd': '40', 'last_year_ptd': '63', 'current_ytd': '40', 'last_ytd': '63', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Rooms Available to Sell', 'today': '71', 'current_ptd': '71', 'last_year_ptd': '48', 'current_ytd': '71', 'last_ytd': '48', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Day Use Rooms', 'today': '0', 'current_ptd': '0', 'last_year_ptd': '0', 'current_ytd': '0', 'last_ytd': '0', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Stay Over Rooms', 'today': '26', 'current_ptd': '26', 'last_year_ptd': '29', 'current_ytd': '26', 'last_ytd': '29', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Total Revenue Rooms', 'today': '26', 'current_ptd': '26', 'last_year_ptd': '29', 'current_ytd': '26', 'last_ytd': '29', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Comp Rooms', 'today': '5', 'current_ptd': '5', 'last_year_ptd': '0', 'current_ytd': '5', 'last_ytd': '0', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Total Non-Revenue Rooms', 'today': '5', 'current_ptd': '5', 'last_year_ptd': '0', 'current_ytd': '5', 'last_ytd': '0', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)}, {'metric': 'Total Occupied Rooms', 'today': '31', 'current_ptd': '31', 'last_year_ptd': '29', 'current_ytd': '31', 'last_ytd': '29', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 22, 914685)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+2025-05-12 04:25:40,431 | ERROR | ❌ performance_statistics extraction failed: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Occ% of Total ' for key 'performance_statistics.PRIMARY'
+[SQL: INSERT INTO performance_statistics (metric, today, current_ptd, last_year_ptd, current_ytd, last_ytd, business_date, source_file, load_timestamp) VALUES (%(metric)s, %(today)s, %(current_ptd)s, %(last_year_ptd)s, %(current_ytd)s, %(last_ytd)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'metric': 'Occ% of Total Available Rooms', 'today': '43.66 %', 'current_ptd': '43.66 %', 'last_year_ptd': '60.42 %', 'current_ytd': '43.66 %', 'last_ytd': '60.42 %', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'Occ% of Total Rooms', 'today': '27.93 %', 'current_ptd': '27.93 %', 'last_year_ptd': '26.13 %', 'current_ytd': '27.93 %', 'last_ytd': '26.13 %', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'STR (STAR) Occ% of Total Rooms', 'today': '23.42 %', 'current_ptd': '23.42 %', 'last_year_ptd': '26.13 %', 'current_ytd': '23.42 %', 'last_ytd': '26.13 %', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'ADR Stay Over Rooms', 'today': '60.76', 'current_ptd': '60.76', 'last_year_ptd': '64.02', 'current_ytd': '60.76', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'ADR for Total Rev Rooms.', 'today': '60.76', 'current_ptd': '60.76', 'last_year_ptd': '64.02', 'current_ytd': '60.76', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'STR (STAR) ADR for Total Rev Rooms.', 'today': '60.76', 'current_ptd': '60.76', 'last_year_ptd': '64.02', 'current_ytd': '60.76', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'ADR for Total Occupied Rooms', 'today': '50.96', 'current_ptd': '50.96', 'last_year_ptd': '64.02', 'current_ytd': '50.96', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'RevPar', 'today': '22.25', 'current_ptd': '22.25', 'last_year_ptd': '38.68', 'current_ytd': '22.25', 'last_ytd': '38.68', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'STR (STAR) RevPar', 'today': '14.23', 'current_ptd': '14.23', 'last_year_ptd': '16.72', 'current_ytd': '14.23', 'last_ytd': '16.72', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Occ% of Total ' for key 'performance_statistics.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 45, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 951, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1306, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Occ% of Total ' for key 'performance_statistics.PRIMARY'
+[SQL: INSERT INTO performance_statistics (metric, today, current_ptd, last_year_ptd, current_ytd, last_ytd, business_date, source_file, load_timestamp) VALUES (%(metric)s, %(today)s, %(current_ptd)s, %(last_year_ptd)s, %(current_ytd)s, %(last_ytd)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'metric': 'Occ% of Total Available Rooms', 'today': '43.66 %', 'current_ptd': '43.66 %', 'last_year_ptd': '60.42 %', 'current_ytd': '43.66 %', 'last_ytd': '60.42 %', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'Occ% of Total Rooms', 'today': '27.93 %', 'current_ptd': '27.93 %', 'last_year_ptd': '26.13 %', 'current_ytd': '27.93 %', 'last_ytd': '26.13 %', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'STR (STAR) Occ% of Total Rooms', 'today': '23.42 %', 'current_ptd': '23.42 %', 'last_year_ptd': '26.13 %', 'current_ytd': '23.42 %', 'last_ytd': '26.13 %', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'ADR Stay Over Rooms', 'today': '60.76', 'current_ptd': '60.76', 'last_year_ptd': '64.02', 'current_ytd': '60.76', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'ADR for Total Rev Rooms.', 'today': '60.76', 'current_ptd': '60.76', 'last_year_ptd': '64.02', 'current_ytd': '60.76', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'STR (STAR) ADR for Total Rev Rooms.', 'today': '60.76', 'current_ptd': '60.76', 'last_year_ptd': '64.02', 'current_ytd': '60.76', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'ADR for Total Occupied Rooms', 'today': '50.96', 'current_ptd': '50.96', 'last_year_ptd': '64.02', 'current_ytd': '50.96', 'last_ytd': '64.02', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'RevPar', 'today': '22.25', 'current_ptd': '22.25', 'last_year_ptd': '38.68', 'current_ytd': '22.25', 'last_ytd': '38.68', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)}, {'metric': 'STR (STAR) RevPar', 'today': '14.23', 'current_ptd': '14.23', 'last_year_ptd': '16.72', 'current_ytd': '14.23', 'last_ytd': '16.72', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 40, 41490)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+2025-05-12 04:25:53,014 | ERROR | ❌ guest_statistics extraction failed: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Number of Adul' for key 'guest_statistics.PRIMARY'
+[SQL: INSERT INTO guest_statistics (metric, today, current_ptd, last_year_ptd, current_ytd, last_ytd, business_date, source_file, load_timestamp) VALUES (%(metric)s, %(today)s, %(current_ptd)s, %(last_year_ptd)s, %(current_ytd)s, %(last_ytd)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'metric': 'Number of Adults', 'today': '52', 'current_ptd': '52', 'last_year_ptd': '52', 'current_ytd': '52', 'last_ytd': '52', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Number of Children', 'today': '2', 'current_ptd': '2', 'last_year_ptd': '2', 'current_ytd': '2', 'last_ytd': '2', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Total Number of Guests', 'today': '54', 'current_ptd': '54', 'last_year_ptd': '54', 'current_ytd': '54', 'last_ytd': '54', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Average Adults Per Room', 'today': '1.68', 'current_ptd': '1.68', 'last_year_ptd': '1.79', 'current_ytd': '1.68', 'last_ytd': '1.79', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Average Rate Per Adult', 'today': '30.38', 'current_ptd': '30.38', 'last_year_ptd': '35.70', 'current_ytd': '30.38', 'last_ytd': '35.70', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Average Revenue Per Adult', 'today': '30.38', 'current_ptd': '30.38', 'last_year_ptd': '36.18', 'current_ytd': '30.38', 'last_ytd': '36.18', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Number of Adul' for key 'guest_statistics.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 45, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/generic.py", line 3008, in to_sql
+    return sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 788, in to_sql
+    return pandas_sql.to_sql(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1958, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1507, in insert_records
+    raise err
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1498, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 1059, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/io/sql.py", line 951, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1306, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1799, in _execute_context
+    self.dialect.do_executemany(
+  File "/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 729, in do_executemany
+    cursor.executemany(statement, parameters)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 643, in executemany
+    return self.execute(stmt)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/cursor.py", line 537, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 97, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 872, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/opt/anaconda3/lib/python3.9/site-packages/mysql/connector/connection.py", line 648, in _handle_result
+    raise get_exception(packet)
+sqlalchemy.exc.IntegrityError: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry '2025-01-01-2025 - 01 - 01- Night Audit Packet.pdf-Number of Adul' for key 'guest_statistics.PRIMARY'
+[SQL: INSERT INTO guest_statistics (metric, today, current_ptd, last_year_ptd, current_ytd, last_ytd, business_date, source_file, load_timestamp) VALUES (%(metric)s, %(today)s, %(current_ptd)s, %(last_year_ptd)s, %(current_ytd)s, %(last_ytd)s, %(business_date)s, %(source_file)s, %(load_timestamp)s)]
+[parameters: ({'metric': 'Number of Adults', 'today': '52', 'current_ptd': '52', 'last_year_ptd': '52', 'current_ytd': '52', 'last_ytd': '52', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Number of Children', 'today': '2', 'current_ptd': '2', 'last_year_ptd': '2', 'current_ytd': '2', 'last_ytd': '2', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Total Number of Guests', 'today': '54', 'current_ptd': '54', 'last_year_ptd': '54', 'current_ytd': '54', 'last_ytd': '54', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Average Adults Per Room', 'today': '1.68', 'current_ptd': '1.68', 'last_year_ptd': '1.79', 'current_ytd': '1.68', 'last_ytd': '1.79', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Average Rate Per Adult', 'today': '30.38', 'current_ptd': '30.38', 'last_year_ptd': '35.70', 'current_ytd': '30.38', 'last_ytd': '35.70', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)}, {'metric': 'Average Revenue Per Adult', 'today': '30.38', 'current_ptd': '30.38', 'last_year_ptd': '36.18', 'current_ytd': '30.38', 'last_ytd': '36.18', 'business_date': datetime.date(2025, 1, 1), 'source_file': '2025 - 01 - 01- Night Audit Packet.pdf', 'load_timestamp': datetime.datetime(2025, 5, 12, 4, 25, 51, 835908)})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+2025-05-12 04:25:53,631 | INFO | ✅ Processed Ledger Activity

@@ -1,0 +1,38 @@
+2025-05-13 03:45:35,588 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-13 03:45:35,608 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-13 03:45:35,620 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-13 03:45:35,628 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-13 03:45:35,631 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-13 03:45:35,662 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-13 03:45:35,666 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-13 03:45:35,686 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-13 03:45:36,437 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:36,481 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 09- Night Audit Packet.pdf
+2025-05-13 03:45:36,493 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:36,523 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 10- Night Audit Packet.pdf
+2025-05-13 03:45:36,667 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:36,706 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 13- Night Audit Packet.pdf
+2025-05-13 03:45:37,315 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:37,345 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 01 - 22- Night Audit Packet.pdf
+2025-05-13 03:45:37,505 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:37,543 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 04- Night Audit Packet.pdf
+2025-05-13 03:45:37,687 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:37,728 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 07- Night Audit Packet.pdf
+2025-05-13 03:45:38,130 | ERROR | ❌ Failed to send email: (421, b'4.3.0 Temporary System Problem. Try again later (10). For more information,\n4.3.0 go to\n4.3.0  https://support.google.com/a/answer/3221692 3f1490d57ef6-e78fd697598sm2518957276.56 - gsmtp')
+2025-05-13 03:45:38,179 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 14- Night Audit Packet.pdf
+2025-05-13 03:45:38,347 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:38,388 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 02 - 15- Night Audit Packet.pdf
+2025-05-13 03:45:38,654 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:38,674 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 03 - 02 - Night Audit Packet.pdf
+2025-05-13 03:45:38,915 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:38,935 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 03 - 04 - Night Audit Packet.pdf
+2025-05-13 03:45:39,150 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:39,192 | INFO | ⏭️ Skipping already processed file in worker: 2025 - 04 - 02- Night Audit Packet.pdf
+2025-05-13 03:45:39,435 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:39,749 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:40,195 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:40,441 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:40,887 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:41,213 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:41,610 | INFO | 📧 Email sent successfully.
+2025-05-13 03:45:41,887 | INFO | 📧 Email sent successfully.

@@ -1,0 +1,515 @@
+2025-05-10 15:42:03,723 | INFO | 📄 Starting processing file: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 15:42:03,768 | INFO | 📄 Starting processing file: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-10 15:42:03,767 | INFO | 📄 Starting processing file: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-10 15:42:03,801 | INFO | 📄 Starting processing file: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-10 15:42:03,846 | INFO | 📄 Starting processing file: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-10 15:42:03,847 | INFO | 📄 Starting processing file: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-10 15:42:03,878 | INFO | 📄 Starting processing file: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-10 15:42:03,913 | INFO | 📄 Starting processing file: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-10 15:42:17,773 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:17,782 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:17,810 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:17,817 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:17,820 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:17,821 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:17,821 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:18,909 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:18,914 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:18,923 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:18,969 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:18,971 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:18,972 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:18,973 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:19,931 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:19,936 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:19,941 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:19,945 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:19,946 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:19,947 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:19,948 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:20,266 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:20,273 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:20,287 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:20,316 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:20,320 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:20,322 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:20,323 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:20,654 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:20,657 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:20,661 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:20,671 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:20,673 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:20,681 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:20,683 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:21,242 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:21,252 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:21,256 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:21,302 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:21,304 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:21,304 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:21,310 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:21,404 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:21,420 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:21,430 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:21,444 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:21,446 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:21,448 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:21,449 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:22,110 | ERROR | ❌ A/R Aging extraction failed: name 'is_strictly_numeric' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in extract_ar_aging
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 53, in <genexpr>
+    if re.fullmatch(r"\d+", account) and all(is_strictly_numeric(val) for val in numeric_tail):
+NameError: name 'is_strictly_numeric' is not defined
+
+2025-05-10 15:42:22,113 | ERROR | ❌ Transaction Closeout extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 61, in handle_section
+    if clean_map: df = clean_column_names(df, clean_map)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:22,118 | ERROR | ❌ In-House List extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 105, in extract_inhouse_df
+    df["arrive"] = df["arrive"].apply(convert_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:22,123 | ERROR | ❌ room_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:22,123 | ERROR | ❌ performance_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:22,125 | ERROR | ❌ guest_statistics extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:22,126 | ERROR | ❌ Ledger Activity extraction failed: name 'extract_amount' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 172, in extract_ledger_activity_report_with_metadata
+    current_entry['opening_balance'] = extract_amount(re.search(r'-?\(?[\d,.]+\)?', line).group(0))
+NameError: name 'extract_amount' is not defined
+
+2025-05-10 15:42:24,124 | ERROR | ❌ Ledger Summary extraction failed: name 'add_metadata' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 63, in handle_section
+    df = add_metadata(df, prop_code, user_id, report_date, business_date)
+NameError: name 'add_metadata' is not defined
+
+2025-05-10 15:42:24,126 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 15:42:24,127 | ERROR | ❌ Rate Discrepancy extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 196, in <lambda>
+    "Rate Discrepancy", lambda _: extract_rate_discrepancy_wrapper({
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 115, in extract_rate_discrepancy_wrapper
+    records = extract_rate_discrepancy(full_text_or_pages["page_texts"])
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 384, in extract_rate_discrepancy
+    converted_start_date = convert_date(start_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:24,178 | ERROR | ❌ Hotel Journal Summary extraction failed: name 'safe_float' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 471, in extract_hotel_journal_summary
+    df[col] = df[col].apply(lambda x: safe_float(x) if pd.notnull(x) else None)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/series.py", line 4753, in apply
+    return SeriesApply(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/apply.py", line 1207, in apply
+    return self.apply_standard()
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/apply.py", line 1287, in apply_standard
+    mapped = obj._map_values(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2920, in pandas._libs.lib.map_infer
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 471, in <lambda>
+    df[col] = df[col].apply(lambda x: safe_float(x) if pd.notnull(x) else None)
+NameError: name 'safe_float' is not defined
+
+2025-05-10 15:42:24,179 | WARNING | ⚠️ No Hotel Journal Summary data in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 15:42:24,184 | ERROR | ❌ Hotel Journal Detail extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 57, in handle_section
+    df = extract_func(list_of_pages) if list_of_pages else extract_func(full_text)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 212, in <lambda>
+    lambda pages: extract_hotel_journal_details(pages).assign(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 5012, in assign
+    data[k] = com.apply_if_callable(v, data)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/common.py", line 379, in apply_if_callable
+    return maybe_callable(obj, **kwargs)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 213, in <lambda>
+    date=lambda df: df["date"].apply(convert_date),
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:24,186 | ERROR | ❌ Reservation Activity extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 90, in handle_custom_section
+    df = clean_column_names(df)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:24,186 | ERROR | ❌ Shift Reconciliation extraction failed: name 'convert_date' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 78, in handle_custom_section
+    result = extract_func()
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 239, in <lambda>
+    lambda: extract_shift_reconciliation(pdf),
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 604, in extract_shift_reconciliation
+    business_date = convert_date(raw_date)
+NameError: name 'convert_date' is not defined
+
+2025-05-10 15:42:24,193 | ERROR | ❌ Tax Exempt extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 90, in handle_custom_section
+    df = clean_column_names(df)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:24,218 | ERROR | ❌ Gross Room Revenue extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 90, in handle_custom_section
+    df = clean_column_names(df)
+NameError: name 'clean_column_names' is not defined
+
+2025-05-10 15:42:24,235 | ERROR | ❌ Revenue by Rate Code extraction failed for 2025 - 01 - 01- Night Audit Packet.pdf: name 'safe_float' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 857, in extract_revenue_by_rate_code
+    df[col] = df[col].apply(lambda x: safe_float(x))
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/series.py", line 4753, in apply
+    return SeriesApply(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/apply.py", line 1207, in apply
+    return self.apply_standard()
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/apply.py", line 1287, in apply_standard
+    mapped = obj._map_values(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/algorithms.py", line 1814, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+  File "lib.pyx", line 2920, in pandas._libs.lib.map_infer
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/extractors.py", line 857, in <lambda>
+    df[col] = df[col].apply(lambda x: safe_float(x))
+NameError: name 'safe_float' is not defined
+
+2025-05-10 15:42:24,236 | WARNING | ⚠️ No Revenue by Rate Code data for revenue_by_rate_code in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 15:42:24,238 | ERROR | ❌ Advance Deposit Journal extraction failed: name 'clean_column_names' is not defined
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 90, in handle_custom_section
+    df = clean_column_names(df)
+NameError: name 'clean_column_names' is not defined
+

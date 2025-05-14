@@ -1,0 +1,2494 @@
+2025-05-13 03:20:02,396 | INFO | 📄 Starting processing file: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-13 03:20:02,426 | INFO | 📄 Starting processing file: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-13 03:20:02,467 | INFO | 📄 Starting processing file: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-13 03:20:02,468 | INFO | 📄 Starting processing file: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-13 03:20:02,470 | INFO | 📄 Starting processing file: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-13 03:20:02,480 | INFO | 📄 Starting processing file: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-13 03:20:02,486 | INFO | 📄 Starting processing file: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-13 03:20:02,487 | INFO | 📄 Starting processing file: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-13 03:20:19,405 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:20,078 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:20,138 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:20,290 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:20,332 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:20,384 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:20,458 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:20,674 | ERROR | ❌ A/R Aging extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:29,449 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:30,122 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:30,165 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:30,344 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:30,364 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:30,410 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:30,486 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:30,715 | ERROR | ❌ Transaction Closeout extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:39,494 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:40,170 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:40,199 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:40,386 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:40,395 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:40,449 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:40,524 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:40,756 | ERROR | ❌ In-House List extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:49,526 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:50,212 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:50,249 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:50,420 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:50,424 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:50,468 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:50,557 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:50,774 | ERROR | ❌ room_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:20:59,559 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:00,236 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:00,266 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:00,461 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:00,461 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:00,488 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:00,574 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:00,811 | ERROR | ❌ performance_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:09,593 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:10,261 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:10,286 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:10,484 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:10,489 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:10,508 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:10,590 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:10,843 | ERROR | ❌ guest_statistics extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:19,619 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:20,288 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:20,308 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:20,508 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:20,514 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:20,545 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:20,615 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:20,896 | ERROR | ❌ Ledger Activity extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:30,870 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:30,875 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-13 03:21:32,545 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:32,549 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-13 03:21:32,593 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:32,769 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:32,774 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-13 03:21:32,953 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:32,958 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-13 03:21:32,964 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:32,967 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-13 03:21:33,005 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:33,007 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-13 03:21:33,232 | ERROR | ❌ Ledger Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:40,918 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:42,590 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:42,617 | ERROR | ❌ No Show Report extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:42,800 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:42,985 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:43,010 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:43,030 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:43,274 | ERROR | ❌ No Show Report extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:50,970 | ERROR | ❌ Hotel Journal Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:52,637 | ERROR | ❌ Hotel Journal Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:52,645 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:52,822 | ERROR | ❌ Hotel Journal Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:53,028 | ERROR | ❌ Hotel Journal Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:53,030 | ERROR | ❌ Hotel Journal Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:53,075 | ERROR | ❌ Hotel Journal Summary extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+
+2025-05-13 03:21:53,308 | ERROR | ❌ Rate Discrepancy extraction failed: 'Engine' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 85, in handle_section
+    insert_dataframe(engine, df, table_name, filename)
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/db_utils.py", line 55, in insert_dataframe
+    df.to_sql(table_name, con=engine, if_exists='append', index=False)
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/core/generic.py", line 3087, in to_sql
+    return sql.to_sql(
+           ^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 842, in to_sql
+    return pandas_sql.to_sql(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2850, in to_sql
+    table.create()
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 984, in create
+    if self.exists():
+       ^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 970, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2865, in has_table
+    return len(self.execute(query, [name]).fetchall()) > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandeepmalkanoor/Documents/Python/airflow_env/lib/python3.11/site-packages/pandas/io/sql.py", line 2672, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'cursor'
+

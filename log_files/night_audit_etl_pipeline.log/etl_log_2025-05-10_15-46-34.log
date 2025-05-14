@@ -1,0 +1,302 @@
+2025-05-10 15:46:34,069 | INFO | 📄 Starting processing file: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 15:46:34,083 | INFO | 📄 Starting processing file: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-10 15:46:34,170 | INFO | 📄 Starting processing file: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-10 15:46:34,234 | INFO | 📄 Starting processing file: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-10 15:46:34,263 | INFO | 📄 Starting processing file: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-10 15:46:34,269 | INFO | 📄 Starting processing file: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-10 15:46:34,291 | INFO | 📄 Starting processing file: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-10 15:46:34,294 | INFO | 📄 Starting processing file: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-10 15:46:48,311 | ERROR | ❌ A/R Aging extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,321 | ERROR | ❌ Transaction Closeout extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,328 | ERROR | ❌ In-House List extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,331 | ERROR | ❌ room_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,332 | ERROR | ❌ performance_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,333 | ERROR | ❌ guest_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,338 | ERROR | ❌ Ledger Activity extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,728 | ERROR | ❌ A/R Aging extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,732 | ERROR | ❌ Transaction Closeout extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,735 | ERROR | ❌ In-House List extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,736 | ERROR | ❌ room_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,737 | ERROR | ❌ performance_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,747 | ERROR | ❌ guest_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:48,750 | ERROR | ❌ Ledger Activity extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:49,150 | ERROR | ❌ A/R Aging extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:49,159 | ERROR | ❌ Transaction Closeout extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:49,162 | ERROR | ❌ In-House List extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:49,164 | ERROR | ❌ room_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:49,165 | ERROR | ❌ performance_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:49,166 | ERROR | ❌ guest_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:49,171 | ERROR | ❌ Ledger Activity extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,023 | ERROR | ❌ A/R Aging extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,031 | ERROR | ❌ Transaction Closeout extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,041 | ERROR | ❌ In-House List extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,058 | ERROR | ❌ room_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,061 | ERROR | ❌ performance_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,064 | ERROR | ❌ guest_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,068 | ERROR | ❌ Ledger Activity extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,575 | ERROR | ❌ A/R Aging extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,600 | ERROR | ❌ Transaction Closeout extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,626 | ERROR | ❌ In-House List extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,628 | ERROR | ❌ room_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,629 | ERROR | ❌ performance_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,630 | ERROR | ❌ guest_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:50,633 | ERROR | ❌ Ledger Activity extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,456 | ERROR | ❌ A/R Aging extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,461 | ERROR | ❌ Transaction Closeout extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,472 | ERROR | ❌ In-House List extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,492 | ERROR | ❌ room_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,499 | ERROR | ❌ performance_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,501 | ERROR | ❌ guest_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,503 | ERROR | ❌ Ledger Activity extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,665 | ERROR | ❌ A/R Aging extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,676 | ERROR | ❌ Transaction Closeout extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,679 | ERROR | ❌ In-House List extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,681 | ERROR | ❌ room_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,683 | ERROR | ❌ performance_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,683 | ERROR | ❌ guest_statistics extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+
+2025-05-10 15:46:51,686 | ERROR | ❌ Ledger Activity extraction failed: insert_dataframe() missing 1 required positional argument: 'filename'
+Traceback (most recent call last):
+  File "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/processor.py", line 64, in handle_section
+    insert_dataframe(df, table_name, filename)
+TypeError: insert_dataframe() missing 1 required positional argument: 'filename'
+

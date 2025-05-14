@@ -1,0 +1,79 @@
+2025-05-10 16:45:11,688 | INFO | 📄 Starting processing file: 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 16:45:11,692 | INFO | 📄 Starting processing file: 2025 - 01 - 02- Night Audit Packet.pdf
+2025-05-10 16:45:11,693 | INFO | 📄 Starting processing file: 2025 - 01 - 03- Night Audit Packet.pdf
+2025-05-10 16:45:11,699 | INFO | 📄 Starting processing file: 2025 - 01 - 04- Night Audit Packet.pdf
+2025-05-10 16:45:11,738 | INFO | 📄 Starting processing file: 2025 - 01 - 05- Night Audit Packet.pdf
+2025-05-10 16:45:11,742 | INFO | 📄 Starting processing file: 2025 - 01 - 06- Night Audit Packet.pdf
+2025-05-10 16:45:11,745 | INFO | 📄 Starting processing file: 2025 - 01 - 07- Night Audit Packet.pdf
+2025-05-10 16:45:11,773 | INFO | 📄 Starting processing file: 2025 - 01 - 08- Night Audit Packet.pdf
+2025-05-10 16:45:25,123 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:25,170 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:25,194 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:25,209 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:25,268 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:25,300 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:25,314 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:26,063 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:26,083 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:26,120 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:26,137 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:26,156 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:26,174 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:26,189 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:27,313 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:27,343 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:27,352 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:27,369 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:27,383 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:27,396 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:27,415 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:27,415 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:27,431 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:27,431 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:27,442 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:27,442 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:27,464 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:27,482 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:27,554 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:27,575 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:27,597 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:27,632 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:27,660 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:27,724 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:27,747 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:27,887 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:27,908 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:27,937 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:27,953 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:27,970 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:28,012 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:28,054 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:28,262 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:28,280 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:28,306 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:28,320 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:28,331 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:28,347 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:28,367 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:28,661 | INFO | ✅ Processed A/R Aging
+2025-05-10 16:45:28,680 | INFO | ✅ Processed Transaction Closeout
+2025-05-10 16:45:28,708 | INFO | ✅ Processed In-House List
+2025-05-10 16:45:28,718 | INFO | ✅ Processed room_statistics
+2025-05-10 16:45:28,731 | INFO | ✅ Processed performance_statistics
+2025-05-10 16:45:28,741 | INFO | ✅ Processed guest_statistics
+2025-05-10 16:45:28,776 | INFO | ✅ Processed Ledger Activity
+2025-05-10 16:45:30,893 | INFO | ✅ Processed Ledger Summary
+2025-05-10 16:45:30,895 | WARNING | ⚠️ No No Show Report data in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 16:45:30,908 | INFO | ✅ Processed Rate Discrepancy
+2025-05-10 16:45:30,939 | INFO | ✅ Processed Hotel Journal Summary
+2025-05-10 16:45:30,985 | INFO | ✅ Processed Hotel Journal Detail
+2025-05-10 16:45:31,046 | INFO | ✅ Processed Reservation Activity → reservation_activity (7 rows)
+2025-05-10 16:45:31,061 | INFO | ✅ Processed Shift Reconciliation → shift_reconciliation (1 rows)
+2025-05-10 16:45:31,072 | INFO | ✅ Processed Shift Reconciliation → shift_summary (3 rows)
+2025-05-10 16:45:31,101 | INFO | ✅ Processed Tax Exempt → exempt_revenue_tax (2 rows)
+2025-05-10 16:45:31,102 | WARNING | ⚠️ No Tax Exempt data for exempt_tax in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 16:45:31,102 | WARNING | ⚠️ No Tax Exempt data for tax_exempt_revenue_summary in 2025 - 01 - 01- Night Audit Packet.pdf
+2025-05-10 16:45:31,119 | INFO | ✅ Processed Tax Exempt → tax_refund_revenue_summary (2 rows)
+2025-05-10 16:45:31,164 | INFO | ✅ Processed Gross Room Revenue → gross_room_revenue_detail (3 rows)
+2025-05-10 16:45:31,186 | INFO | ✅ Processed Revenue by Rate Code → revenue_by_rate_code (9 rows)
+2025-05-10 16:45:31,198 | INFO | ✅ Processed Advance Deposit Journal → advance_deposit_journal (1 rows)
