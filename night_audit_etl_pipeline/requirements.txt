@@ -24,7 +24,7 @@ certifi==2025.4.26
 cffi==1.17.1
 chardet==5.2.0
 charset-normalizer==3.4.2
-click==8.2.0
+click==8.1.8
 clickclick==20.10.2
 colorama==0.4.6
 colorlog==4.8.0
@@ -44,7 +44,7 @@ Flask-AppBuilder==4.3.6
 Flask-Babel==2.0.0
 Flask-Caching==2.3.1
 Flask-JWT-Extended==4.7.1
-Flask-Limiter==3.12
+Flask-Limiter==3.11.0
 Flask-Login==0.6.3
 Flask-Session==0.4.0
 Flask-SQLAlchemy==2.5.1
@@ -66,7 +66,7 @@ Jinja2==3.1.6
 jsonschema==4.23.0
 jsonschema-specifications==2025.4.1
 lazy-object-proxy==1.11.0
-limits==5.1.0
+limits==4.2
 linkify-it-py==2.0.3
 lockfile==0.12.2
 Mako==1.3.10
@@ -93,7 +93,7 @@ opentelemetry-proto==1.33.0
 opentelemetry-sdk==1.33.0
 opentelemetry-semantic-conventions==0.54b0
 ordered-set==4.1.0
-packaging==25.0
+packaging>=21.3,<25
 pandas==2.1.4
 paramiko==3.5.1
 pathspec==0.12.1
