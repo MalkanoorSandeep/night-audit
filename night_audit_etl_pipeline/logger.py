@@ -1,38 +1,30 @@
-# etl/logger_setup.py
+# night_audit_etl_pipeline/logger.py
 
 import logging
 import os
 from datetime import datetime
-from night_audit_etl_pipeline.config_loader import config  # Adjust if config_loader is in another location
 
-def setup_logger(name=None):
-    log_dir = config().get("log_file")
-    
-    if not log_dir:
-        raise ValueError("❌ 'log_file' path not defined in config.")
+def setup_logger(name="night_audit_etl", log_level="INFO"):
+    log_file_path = os.getenv("LOG_FILE_PATH")
 
-    # Ensure directory exists
+    if not log_file_path:
+        raise ValueError("❌ 'LOG_FILE_PATH' environment variable not set.")
+
+    log_dir = os.path.dirname(log_file_path)
     os.makedirs(log_dir, exist_ok=True)
 
-    # Log filename with date-time
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    log_filename = os.path.join(log_dir, f"etl_log_{timestamp}.log")
+    logger = logging.getLogger(name)
+    logger.setLevel(getattr(logging, log_level.upper(), logging.INFO))
 
-    # Create logger
-    logger = logging.getLogger(name if name else __name__)
-    logger.setLevel(logging.INFO)
-
-    # Prevent duplicate handlers
     if not logger.handlers:
         formatter = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
 
-        file_handler = logging.FileHandler(log_filename)
+        file_handler = logging.FileHandler(log_file_path)
         file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
 
         stream_handler = logging.StreamHandler()
         stream_handler.setFormatter(formatter)
-
-        logger.addHandler(file_handler)
         logger.addHandler(stream_handler)
 
     return logger

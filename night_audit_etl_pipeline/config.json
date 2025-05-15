@@ -1,10 +1,9 @@
 {
-    "pdf_folder": "/Users/sandeepmalkanoor/Documents/Python/data",
-    "mysql_conn": "mysql+mysqlconnector://${DB_USER}:${DB_PASSWORD}@localhost:3306/dev_night_audit",
-    "log_file": "/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/log_files/night_audit_etl_pipeline.log",
+    "pdf_folder": "${PDF_FOLDER}",
+    "mysql_conn": "mysql+pymysql://${DB_USER}:${DB_PASSWORD}@localhost:3306/dev_night_audit",
     "email": {
-        "sender": "sandeepm2145@gmail.com",
-        "receiver": "sandeepmalkanor3@gmail.com",
+        "sender": "${EMAIL_SENDER}",
+        "receiver": "${EMAIL_RECEIVER}",
         "smtp_server": "smtp.gmail.com",
         "smtp_port": 587,
         "username": "${EMAIL_USER}",

@@ -5,11 +5,14 @@ import fitz
 import pdfplumber
 from datetime import datetime
 import traceback
+import logging
 from night_audit_etl_pipeline.helpers import convert_date, safe_float, is_strictly_numeric, extract_amount , clean_column_names, add_metadata, clean_numeric_column
 from night_audit_etl_pipeline.logger import setup_logger
 
 
-logger = setup_logger(__name__)
+
+logger = logging.getLogger("night_audit_etl")
+
 
 def extract_metadata(list_of_pages):
     business_date = prop_code = user_id = report_date = None
@@ -71,47 +74,6 @@ def extract_transaction_closeout(list_of_pages):
     cols = ["Description", "Opening Balance", "Today's Total", "Today's Adjustments", "Today's Net", "PTD Totals", "YTD Totals"]
     return pd.DataFrame(results, columns=cols) if results else pd.DataFrame(columns=cols)
 
-# def extract_inhouse_lines(list_of_pages):
-#     lines = []
-#     for page_lines in list_of_pages:
-#         if any("In House List" in line for line in page_lines):
-#             lines.extend(line.strip() for line in page_lines if line.strip())
-#     return lines
-
-# def parse_inhouse_list_with_confirmation(lines):
-#     records = []
-#     for line in lines:
-#         parts = line.split()
-#         if len(parts) >= 9 and re.match(r'^\d{3}$', parts[0]) and parts[1].isdigit():
-#             room, account = parts[0], parts[1]
-#             guest_parts, i = [], 2
-#             while i < len(parts) and not re.match(r'\d{1,2}/\d{1,2}/\d{2,4}', parts[i]): guest_parts.append(parts[i]); i += 1
-#             guest_name_raw = " ".join(guest_parts)
-#             conf_match = re.search(r'(\d{6,8})$', guest_name_raw)
-#             confirmation_number = conf_match.group(1) if conf_match else ""
-#             guest_name = guest_name_raw[:conf_match.start()].strip() if conf_match else guest_name_raw.strip()
-#             records.append({
-#                 "room": room, "account": account, "guest_name": guest_name, "confirmation_notes": confirmation_number,
-#                 "arrive": "", "depart": "", "ppl": "", "type": "", "rate_code": "", "rate": "",
-#                 "gtd": "", "source": "", "market": "", "balance": ""
-#             })
-#     return pd.DataFrame(records)
-
-# def extract_inhouse_df(list_of_pages):
-#     inhouse_lines = extract_inhouse_lines(list_of_pages)
-#     df = parse_inhouse_list_with_confirmation(inhouse_lines)
-#     if df.empty:
-#         return df
-#     df["arrive"] = df["arrive"].apply(convert_date)
-#     df["depart"] = df["depart"].apply(convert_date)
-#     df["rate"] = df["rate"].apply(safe_float)
-#     df["balance"] = df["balance"].apply(safe_float)
-#     return df
-
-
-# import pandas as pd
-# import re
-# from datetime import datetime
 
 # --- Helper Functions ---
 def extract_inhouse_lines(list_of_pages):
@@ -469,43 +431,6 @@ def extract_rate_discrepancy(page_texts):
     return records
 
 
-
-# def extract_hotel_journal_details(list_of_pages):
-#     entries, current_code = [], None
-#     skip_keywords = ["Posting Date", "Account Type", "Total For", "Grand Total", "Subtotal", "Date Range", "Software Version"]
-#     for page_idx, lines in enumerate(list_of_pages):
-#         collecting = False
-#         for line_idx, line in enumerate(lines):
-#             line = line.strip()
-#             if "Hotel Journal Detail" in line: collecting = True; continue
-#             if collecting and any(k in line for k in ["Hotel Journal Summary", "Date/Time of Printing", "Totals:", "Software Version"]): collecting = False; continue
-#             if line.startswith("Transaction Code:"):
-#                 current_code = line.replace("Transaction Code:", "").strip(); continue
-#             if not collecting or not current_code: continue
-#             if any(skip in line for skip in skip_keywords): continue
-#             amount_match = re.search(r'(\(?-?\$?\d{1,3}(?:,\d{3})*(?:\.\d{2})?\)?)\s+0\.00$', line)
-#             if not amount_match: continue
-#             try:
-#                 amount_val = amount_match.group(1).replace('$','').replace(',','').replace('(','-').replace(')','')
-#                 amount = float(amount_val)
-#                 line_cleaned = line.replace(amount_match.group(0), '').strip()
-#                 tokens = line_cleaned.split()
-#                 if len(tokens) < 8: continue
-#                 date, posting_date, time, am_pm, user_id = tokens[:5]
-#                 shift_id = tokens[5] if tokens[5].isdigit() else None
-#                 room = tokens[6] if shift_id and len(tokens) > 6 and tokens[6].isdigit() else None
-#                 acc_idx = 7 if shift_id else 6
-#                 account_type = tokens[acc_idx]
-#                 account_number = tokens[acc_idx+1] if len(tokens) > acc_idx+1 and tokens[acc_idx+1].isdigit() else None
-#                 guest_name = " ".join(tokens[acc_idx+2:]) if account_number else " ".join(tokens[acc_idx+1:])
-#                 entries.append({
-#                     "transaction_code": current_code, "date": date, "posting_date": posting_date, "time": time,
-#                     "am_pm": am_pm, "user_id": user_id, "shift_id": shift_id, "room": room, "account_type": account_type,
-#                     "account_number": account_number, "guest_name": guest_name.strip(), "amount": amount
-#                 })
-#             except Exception as e:
-#                 logger.debug(f"⚠️ Failed parsing journal at page {page_idx+1} line {line_idx+1}: {e}")
-#     return pd.DataFrame(entries)
 
 
 def extract_hotel_journal_details(list_of_pages):

@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def config(path="/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/config.json"):
+def config(path="/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngineering_Project/night_audit_etl_pipeline/config.json"):
     with open(path) as f:
         raw_config = json.load(f)
 
@@ -16,3 +16,5 @@ def config(path="/Users/sandeepmalkanoor/Documents/Python/Night_Audit_DataEngine
         return value
 
     return env_substitute(raw_config)
+
+log_file_path = os.getenv("LOG_FILE_PATH", config().get("log_file"))

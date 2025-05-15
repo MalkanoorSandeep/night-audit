@@ -3,8 +3,9 @@ from email.mime.text import MIMEText
 from night_audit_etl_pipeline.logger import setup_logger
 from night_audit_etl_pipeline.config_loader import config as load_config
 from datetime import datetime
+import logging
 
-logger = setup_logger(__name__)
+logger = logging.getLogger("night_audit_etl")  
 
 def send_email(subject, message):
     try:

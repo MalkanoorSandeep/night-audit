@@ -6,24 +6,20 @@ import fitz
 import camelot
 import pandas as pd
 import traceback
+import logging
 from datetime import datetime
 from sqlalchemy import create_engine
 from night_audit_etl_pipeline.config_loader import config
 from night_audit_etl_pipeline.logger import setup_logger
 from night_audit_etl_pipeline.db_utils import *
-from night_audit_etl_pipeline.email_alerts import notify_result
+from night_audit_etl_pipeline.email_alerts import send_email
 from night_audit_etl_pipeline.helpers import convert_date, safe_float, is_strictly_numeric, extract_amount , clean_column_names, add_metadata, clean_numeric_column
 from night_audit_etl_pipeline.extractors import *
 
 
 
-logger = setup_logger(__name__)
 
-# engine = None
-
-# def init_engine(mysql_conn_str):
-#     global engine
-#     engine = create_db_engine(mysql_conn_str)
+logger = logging.getLogger("night_audit_etl")
 
 
 def finalize_etl_run(engine, filename, section_statuses):
@@ -36,33 +32,49 @@ def finalize_etl_run(engine, filename, section_statuses):
 
     logger.info(f"✅ Completed {filename} | Rows loaded: {loaded_rows} | Failed: {failed_sections if failed_sections else 'None'}")
 
-    notify_result(filename, loaded_rows, failed_sections)
 
 
 
 
-
-def process_pdf_folder(pdf_folder_path, mysql_conn_str):
+def process_pdf_folder(pdf_folder_path, mysql_conn_str, logger_initializer=None):
     pdf_files = sorted(f for f in os.listdir(pdf_folder_path) if f.endswith(".pdf") and "night audit" in f.lower())
-    args_list = [(pdf_folder_path, f, mysql_conn_str) for f in pdf_files] #-- added
-
-    # args_list = [(pdf_folder_path, f) for f in pdf_files]
+    args_list = [(pdf_folder_path, f, mysql_conn_str) for f in pdf_files] 
     num_workers = min(cpu_count(), len(pdf_files))
 
     logger.info(f"🚀 Starting multiprocessing with {num_workers} workers...")
 
 
-    # with Pool(
-    #     processes=num_workers,
-    #     initializer=init_engine,
-    #     initargs=(mysql_conn_str,)
-    # ) as pool:
-    #     for _ in tqdm(pool.imap_unordered(process_pdf_task, args_list), total=len(args_list), desc="Processing PDFs"):
-    #         pass
+    results = []
 
-    with Pool(processes=num_workers) as pool:    #---- Added
-        for _ in tqdm(pool.imap_unordered(process_pdf_task, args_list), total=len(args_list), desc="Processing PDFs"):
-            pass
+    with Pool(processes=num_workers, initializer=logger_initializer) as pool:
+        for result in tqdm(pool.imap_unordered(process_pdf_task, args_list), total=len(args_list), desc="Processing PDFs"):
+            if result:
+                results.append(result)
+
+
+    total_files = len(results)
+    total_rows = sum(r.get("rows", 0) for r in results)
+    skipped_files = [r["filename"] for r in results if r["status"] == "SKIPPED"]
+    failed_files = [r["filename"] for r in results if r["status"] == "FAIL"]
+    successful_files = [r["filename"] for r in results if r["status"] == "SUCCESS"]
+
+    subject = "[ETL Summary] Night Audit ETL Completed"
+    body = (
+        f"✅ Total Files Processed: {total_files}\n"
+        f"📄 Files Succeeded: {len(successful_files)}\n"
+        f"⏭️ Files Skipped: {len(skipped_files)}\n"
+        f"❌ Files Failed: {len(failed_files)}\n"
+        f"📊 Total Rows Loaded: {total_rows}\n\n"
+    )
+
+    if skipped_files:
+        body += f"\n⏭️ Skipped Files:\n" + "\n".join(skipped_files)
+    if failed_files:
+        body += f"\n❌ Failed Files:\n" + "\n".join(failed_files)
+
+    send_email(subject, body)
+
+
 
 
 def process_pdf_task(args):
@@ -72,8 +84,8 @@ def process_pdf_task(args):
 
     if is_file_already_processed(local_engine, filename):
         logger.info(f"⏭️ Skipping already processed file in worker: {filename}")
-        notify_result(filename, 0, 'skippped')
-        return
+        return {"filename": filename, "status": "SKIPPED", "rows": 0}
+    
     
     return process_pdf(full_path, filename, local_engine)
 
@@ -105,13 +117,12 @@ def handle_custom_section(engine, section_name, extract_func, filename, insert_s
     try:
         result = extract_func()
         if not isinstance(result, tuple):
-            result = (result,)  # Wrap single DF in tuple
+            result = (result,)  
 
         elif isinstance(result, tuple):
             result = list(result) 
 
         for df, (table_name, extras) in zip(result, insert_specs):
-            # if df is not None and not df.empty:
             if isinstance(df, pd.DataFrame) and not df.empty:
                 if df.index.name or df.index.names != [None]:
                     df = df.reset_index()
@@ -311,3 +322,12 @@ def process_pdf(pdf_path, filename, engine):
     )
         # --- Final summary ---
     finalize_etl_run(engine,filename, section_statuses)
+
+    status = "FAIL" if any(status == "FAIL" for _, status in section_statuses) else "SUCCESS"
+    loaded_rows = sum(v if isinstance(v, int) else 0 for _, v in section_statuses)
+
+    return {
+        "filename": filename,
+        "status": status,
+        "rows": loaded_rows
+    }
